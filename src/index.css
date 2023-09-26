@@ -11,3 +11,84 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  background-color: #F4F4F4;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 2em;
+  color: #2C3E50;
+}
+.bookmark-list {
+  list-style-type: none;
+}
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #E1E1E1;
+}
+.bookmark-item:last-child {
+  border-bottom: none;
+}
+.bookmark-link {
+  text-decoration: none;
+  color: #3498DB;
+  font-size: 1.1em;
+}
+.delete-btn {
+  background-color: #E74C3C;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.delete-btn:hover {
+  background-color: #C0392B;
+}
+/* Add Bookmark Form */
+.add-bookmark-form {
+  margin-top: 30px;
+}
+.add-bookmark-input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #E1E1E1;
+  border-radius: 3px;
+}
+.add-bookmark-btn {
+  padding: 10px 15px;
+  background-color: #2ECC71;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.add-bookmark-btn:hover {
+  background-color: #27AE60;
+}
