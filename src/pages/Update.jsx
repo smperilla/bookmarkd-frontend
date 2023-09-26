@@ -10,12 +10,12 @@ const Update = () => {
         })
     }
   return (
-    <div>
+    <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
         <h2>Editing {bookmark.title} Bookmark</h2>
-        <Form action={`/update/${bookmark._id}`} method='post'>
-            <input onChange={handleChange} type="text" name="title" placeholder="Website Name" value={formData.title}/>
-            <input onChange={handleChange} type="text" name="url" placeholder="Website URL (please include https://)" value={formData.url}/>
-            <input type="submit" value={`Update ${bookmark.title} Bookmark`}/>
+        <Form action={`/update/${bookmark._id}`} method='post' className='add-bookmark-form'>
+            <input className='add-bookmark-input' onChange={handleChange} type="text" name="title" placeholder="Website Name" value={formData.title}/>
+            <input className='add-bookmark-input' onChange={handleChange} type="text" name="url" placeholder="Website URL (please include https://)" value={formData.url}/>
+            <input className='add-bookmark-btn' type="submit" value={`Update ${bookmark.title} Bookmark`}/>
         </Form>
         <Link to={'/'}>Back Home</Link>
     </div>

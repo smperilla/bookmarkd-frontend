@@ -71,7 +71,11 @@ header h1 {
 }
 /* Add Bookmark Form */
 .add-bookmark-form {
-  margin-top: 30px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
 }
 .add-bookmark-input {
   width: 70%;
